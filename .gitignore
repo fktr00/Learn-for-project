@@ -1,6 +1,20 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/windows
-# Edit at https://www.toptal.com/developers/gitignore?templates=windows
+# Created by https://www.toptal.com/developers/gitignore/api/windows,jupyternotebooks
+# Edit at https://www.toptal.com/developers/gitignore?templates=windows,jupyternotebooks
+
+### JupyterNotebooks ###
+# gitignore template for Jupyter Notebooks
+# website: http://jupyter.org/
+
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Remove previous ipynb_checkpoints
+#   git rm -r .ipynb_checkpoints/
 
 ### Windows ###
 # Windows thumbnail cache files
@@ -28,4 +42,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/windows
+# End of https://www.toptal.com/developers/gitignore/api/windows,jupyternotebooks
