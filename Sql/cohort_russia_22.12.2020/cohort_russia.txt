@@ -29,7 +29,7 @@ with own as -- Имя страны Россия указано
 		u.id,
 		phone,
 		case
-			when left(u.phone, 2) ~ '^(79|78|73|74).*' and length(u.phone) = 11 then 'russia'
+			when left(u.phone::text, 2) ~ '^(79|78|73|74).*' and length(u.phone::text) = 11 then 'russia'
 			when u.phone is null then null
 			else 'non-russia'
 		end as is_russia
